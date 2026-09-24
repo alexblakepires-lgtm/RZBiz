@@ -1,21 +1,17 @@
-# Main — design reference
+# RZBis — Website
 
-This is a design mockup created in a visual design tool (an appifact
-design canvas), exported as a standalone page. Treat it as a REFERENCE
-MOCKUP, not production code: the markup and inline styles carry the
-design's precise values — colors, font sizes, spacing, radii, shadows,
-layout — which an implementation should replicate faithfully in its own
-components and styling system rather than copy wholesale.
+Source for the RZBis (raw materials brokerage, Curitiba) website, live at [rzbis.com](https://rzbis.com) via GitHub Pages.
 
 ## Contents
 
-- `Main.dc.html` — the artboard (a Design Component: an `<x-dc>`
-  template + a small logic class). The values to replicate live in its
-  inline `style="…"` attributes and the `<helmet><style>` block.
-- `support.js`, `vendor/react*.js` — the runtime that renders the
-  component in a browser; not part of the design.
+- `index.html` — the entire site. Self-contained (styles, images, and video are embedded inline), no build step or dependencies.
 
-## Viewing
+## Making changes
 
-Serve the folder (e.g. `python3 -m http.server`) and open `Main.dc.html`;
-some browsers block the scripts over file://.
+Edit `index.html` directly and push to `main`. GitHub Pages redeploys automatically, changes are usually live within a minute or two.
+
+## Domain
+
+DNS is managed through Squarespace (Dido's account). GitHub Pages custom domain is set in **Settings → Pages**, with a `CNAME` file at the repo root pointing to `rzbis.com`.
+
+Designed by NRL Studios LLC.
